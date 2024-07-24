@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagf">
+    
+
+
+    <section class="escrp">
+<h1 class="wt">Insira seus dados para finalizar a compra </h1>
+    </section>
+
+
+<section class="secp">
+    <H1 class="wtp">Nome</H1>
+<input class="inp" id="nome" type="text" placeholder="Nome">
+
+<H1 class="wtp">CPF</H1>
+<input class="inp" id="CPF" type="text" placeholder="CPF">
+
+<H1 class="wtp">CEP</H1>
+<input class="inp" id="CEP" type="text" placeholder="CEP">
+
+<H1 class="wtp">Endereço</H1>
+<input class="inp" id="Endereço" type="text" placeholder="Endereço">
+
+<H1 class="wtp">Ponto de referencia</H1>
+<input class="inp" id="pontoDeReferencia" type="text" placeholder="Ponto de referencia">
+</section>
+
+<button class="btp" onclick="submeterPagamento()">finalizar compra</button>
+<section>
+    <div id="produtoBlock" class="block">
+
+    <h2>Carrinho</h2>
+    <div id="cart-items"></div></section>
+
+
+<script>
+    function submeterPagamento()
+    const nome= document.getElementById('nome').value;
+    const CPF= document.getElementById('CPF').value;
+    const CEP= document.getElementById('CEP').value;
+    const Endereço= document.getElementById('Endereço').value;
+    const pontoDeReferencia= document.getElementById('Ponto de referencia').value;
+
+    document.addEventListener('DOMContentLoaded', () => {
+const cartItemsContainer = document.getElementById('cart-items');
+const pagar = JSON.parse(localStorage.getItem('pagamento')) || [];
+if (pagar.length === 0) {
+cartItemsContainer.innerText = 'O carrinho está vazio.';
+} else {
+pagar.forEach(produto => {
+const itemElemento = document.createElement('div');
+itemElemento.className = 'cart-item';
+itemElemento.innerText = `${produto.name} -
+
+$${produto.price}`;
+
+cartItemsContainer.appendChild(itemElemento);
+});
+}
+});
+</script>
+
+
+</body>
+</html>

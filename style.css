@@ -1,0 +1,331 @@
+*{margin: 0%;}
+
+.titulo{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 350px ;
+    padding-top: 90px;
+    
+}
+
+.img12{
+  width: 20%;
+  position: relative;
+  left: 370px;
+}
+
+.cima{
+display: flex;
+background-image: linear-gradient(to top, rgb(0, 0, 0), green);
+}
+
+.img1{
+  width: 20%;
+}
+
+.img2{
+  width: 20%;
+  position: relative;
+
+}
+
+.subT{
+  color: rgb(255, 255, 255);
+  position: relative;
+  right: 45px;
+  padding-top: 150px
+  
+}
+ 
+
+.baixu{
+ background-color: rgb(5, 209, 5);
+  display: flex;
+}
+
+.imgwpp{
+  width: 5%;
+}
+
+.wt{
+  color: white;
+  position: relative;
+  left: 20px;
+}
+
+.wppltr{
+  position: relative;
+  left: 350px;
+  color:white;
+}
+
+.linhaup{
+  background-color: rgb(109, 109, 109);
+}
+
+.context{
+  background-image: linear-gradient(black, green)
+}
+
+.wt1{
+  color: white;
+  position: relative;
+  left: 680px;
+  font-size: 100px;
+  justify-content: center;
+}
+
+.bo{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.brioco{
+  justify-content: space-around;
+}
+
+
+.imgleft{
+  width: 20%;
+  position: relative;
+ 
+}
+
+.korpin{
+  background-image: -moz-linear-gradient(black, green);
+}
+
+.wtp1{
+  position: relative;
+  width: 500px;
+}
+
+.butaun{
+  font-size: 70px;
+}
+
+.hd2{
+  background-image: -moz-linear-gradient(green, black);
+}
+
+
+.wt12{
+  color: white;
+  position: relative;
+  left: 680px;
+  justify-content: center;
+}
+
+.img23{
+  width: 10%;
+  position: relative;
+
+}
+
+.botoes2{
+  position: relative;
+  justify-content: space-around;
+}
+
+.butaun1{
+  font-size: 70px;
+  position: relative;
+  left: 150px;
+}
+
+.butaun2{
+  font-size: 70px;
+  position: relative;
+  left: 530px;
+}
+
+.butaun3{
+  font-size: 70px;
+  position: relative;
+  left: 920px;
+}
+
+.img231{
+  width: 10%;
+  position: relative;
+  left: 150px;
+}
+
+.img232{
+  width: 10%;
+  position: relative;
+  left: 580px;
+}
+
+.img233{
+  width: 10%;
+  position: relative;
+  left: 1100px;
+}
+
+.EU{
+  font-size: 130px;
+  position: relative;
+  left: 400px;
+  
+}
+
+.imgeu{
+  width: 20%;
+}
+
+.euzim{
+  background-color: rgb(0, 78, 13);
+}
+
+.letrin{
+  color: white;
+}
+
+.logo3{
+  width: 20%;
+  position: relative;
+}
+
+.logo32{
+  width: 20%;
+  position: relative;
+  left: 360px;
+}
+
+box-busca{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.search-box-input::placeholder {
+  
+  color:#ffffff;
+  opacity: 0.6;
+}
+/* Chrome, Opera ySafari */
+.search-box-input::-webkit-input-placeholder { color: #ffffff; }
+/* Firefox 19+ */
+.search-box-input::-moz-placeholder { color: #ffffff; }
+/* IE 10+ y Edge */
+.search-box-input:-ms-input-placeholder { color: #ffffff; }
+.search-box form {
+  
+  display: flex;
+  border-radius: 50px;
+  background-color: #4c4c4c;
+  height: 45px;
+}
+.search-box:hover .search-box-input {
+  
+  padding-left: 2em;
+  padding-right: 1em;
+  width: 250px;
+}
+.search-box-input {
+  outline: 0;
+  font-size: 1.2em;
+  color: #fff;
+  width: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  transition: .45s;
+}
+.search-box-button {
+ display: flex;
+ border-radius: 50%;
+ width: 45px;
+ height: 45px;
+ background-color: #14c0c7;
+ border: none;
+ cursor: pointer;
+ transition: .3s;
+}
+.search-box-button:active  {
+  transform: scale(.85);
+}
+.search-box-icone {
+  margin: auto;
+  color: #fff;
+}
+@media screen and (min-width: 400px){
+  
+  .search-box:hover .search-box-input {
+      width: 360px;
+  }
+}
+
+nav {
+  text-align: center;
+  margin-top: 50px;
+}
+nav a {
+text-decoration: none;
+color: #fff;
+padding: 0px 50px 10px 0;
+font-size: 20pt;
+position: relative;
+
+}
+body {
+
+background-color: black;
+}
+nav a::after {
+  content:" ";
+  width: 0%;
+  height: 4px;
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+.botao{
+  width: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+.pagf{
+  background-color: #4c4c4c;
+}
+
+.escrp{
+  text-align: center;
+  font-size: 40px;
+}
+
+.inp{
+padding-right: 600px;
+position: relative;
+left: 150px;
+}
+
+.wtp{
+  color: #fff;
+ position: relative;
+ left: 150px;
+}
+
+.secp{
+  position: relative;
+  top: 100px;
+}
+
+.btp{
+  position: relative;
+  top: 170px;
+  left: 150px;
+}
